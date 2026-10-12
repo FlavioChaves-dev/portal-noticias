@@ -1,0 +1,114 @@
+/* Importação da fonte moderna padrão */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --uc-azul-escuro: #1b365d; /* Cor do texto do logo e menus */
+    --uc-azul-claro: #007ac3;  /* Cor dos feixes de luz do logo */
+    --uc-fundo: #f8f9fa;       /* Cinza muito claro para o fundo */
+    --uc-texto: #333333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--uc-fundo);
+    color: var(--uc-texto);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+.header-top {
+    background-color: white;
+    border-bottom: 3px solid var(--uc-azul-claro);
+}
+
+.navbar-custom {
+    background-color: var(--uc-azul-escuro);
+}
+
+.navbar-custom .nav-link {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-custom .nav-link:hover {
+    color: white;
+}
+
+/* --- CARDS DE NOTÍCIAS (Estilo UniCatólica) --- */
+.news-card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    position: relative;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card-date-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--uc-azul-escuro);
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.card-date-badge span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.news-card .card-title {
+    color: var(--uc-azul-escuro);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.btn-leia-mais {
+    color: var(--uc-azul-claro);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0;
+}
+
+.btn-leia-mais:hover {
+    color: var(--uc-azul-escuro);
+    text-decoration: underline;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: var(--uc-azul-escuro);
+    color: white;
+    margin-top: auto;
+}
+
+/* --- MEDIA QUERY OBRIGATÓRIA (Responsividade) --- */
+/* Força o empilhamento em ecrãs de telemóvel conforme exigido pelo professor */
+@media (max-width: 768px) {
+    .nav-menu-custom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .news-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

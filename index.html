@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOME DA SUA EMPRESA NA BARRINHA -->
+    <title>F&N NEWS | Portal de Projetos UniCatólica</title>
+    
+    <!-- LINK PARA A BARRINHA (Favicon) -->
+    <link rel="icon" type="image/png" href="img/favicon-fn.png?v=2">
+    
+    <!-- CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nosso CSS Personalizado -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho Semântico com Logótipo e Nome da Empresa -->
+    <header class="header-top py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-3">
+                <img src="img/logo-unicatolica.png" alt="Logótipo UniCatólica" height="40">
+                <h1 class="h3 mb-0 text-dark fw-bold" style="color: var(--uc-azul-escuro) !important;">
+                    <span style="color: var(--uc-azul-claro);">|</span> F&N NEWS Coberturas
+                </h1>
+            </div>
+            <span class="text-muted d-none d-md-block fw-bold" style="color: var(--uc-azul-claro) !important;">F&N NEWS &copy; 2026</span>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação Semântico -->
+    <nav class="navbar navbar-expand-md navbar-custom py-2">
+        <div class="container">
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto nav-menu-custom">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projeto1.html">IA e Luto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projeto2.html">IA e Trabalho</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projeto3.html">Mulheres na TI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal Semântico -->
+    <main class="container my-5">
+        
+        <!-- Banner do Evento -->
+        <section class="mb-5">
+            <img src="img/banner-evento.jpg" alt="Banner Transforma - XV Jornada de Iniciação Científica" class="img-fluid rounded shadow-sm w-100">
+        </section>
+
+        <!-- SECÇÃO SOBRE (Requisito Obrigatório da Aba 1) -->
+        <section class="mb-5 bg-white p-4 rounded shadow-sm border-start border-4" style="border-color: var(--uc-azul-claro) !important;">
+            <div class="d-flex align-items-center justify-content-between border-bottom pb-2 mb-3">
+                <h2 class="fw-bold h4 mb-0" style="color: var(--uc-azul-escuro);">Sobre a Cobertura</h2>
+                <img src="img/favicon-fn.png" alt="Logo F&N News" height="35">
+            </div>
+            <p>Este portal de notícias e análises foi desenvolvido como atividade prática da disciplina de Soluções para Internet, do curso de <strong>Engenharia de Software</strong> da UniCatólica, pela nossa agência de cobertura independente.</p>
+            <ul class="list-unstyled text-muted">
+                <li><strong>Equipe de Reportagem F&N NEWS:</strong> Flávio Sousa de França Chaves e Mateus Diel Inomata.</li>
+                <li><strong>Data do Evento:</strong> 07 de Outubro de 2026.</li>
+                <li><strong>Local de Cobertura:</strong> Campus da UniCatólica.</li>
+                <li><strong>Objetivo:</strong> Atuar como analistas de tecnologia para observar, documentar e publicar uma visão jornalística e crítica sobre os projetos de pesquisa apresentados na jornada.</li>
+            </ul>
+        </section>
+
+        <section class="mb-4 text-center">
+            <h2 class="fw-bold mb-3" style="color: var(--uc-azul-escuro);">Notícias e novidades</h2>
+            <p class="lead text-muted">Acompanhe a análise jornalística dos destaques apresentados na Jornada de Inovação.</p>
+        </section>
+
+        <!-- Grid de Artigos (Cards no estilo UniCatólica) -->
+        <div class="row g-4 news-grid">
+            
+            <!-- Projeto 1 -->
+            <article class="col-12 col-md-4">
+                <div class="card news-card">
+                    <div class="card-date-badge">
+                        <span>2026</span>
+                        OUT<br>07
+                    </div>
+                    <img src="img/projeto1-01.jpg" class="card-img-top" alt="Apresentação do projeto sobre IA e Luto">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-light text-dark mb-2 align-self-start border">Direitos Humanos</span>
+                        <h3 class="card-title h5">A IA na Produção Multimídia e o Processo de Luto</h3>
+                        <p class="card-text text-muted small">Uma análise interdisciplinar sobre os griefbots, a mercantilização do afeto e os limites dos direitos da personalidade post mortem.</p>
+                        <a href="projeto1.html" class="btn-leia-mais mt-auto">Ler matéria completa &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="col-12 col-md-4">
+                <div class="card news-card">
+                    <div class="card-date-badge">
+                        <span>2026</span>
+                        OUT<br>07
+                    </div>
+                    <img src="img/projeto2-01.jpg" class="card-img-top" alt="Leonardo apresentando o projeto sobre IA no mercado de trabalho">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-light text-dark mb-2 align-self-start border">Tecnologia e Trabalho</span>
+                        <h3 class="card-title h5">Inteligência Artificial e Impactos no Mercado</h3>
+                        <p class="card-text text-muted small">Estudo revela o efeito dual da automação, focando na polarização de cargos e na necessidade urgente de um Direito Algorítmico.</p>
+                        <a href="projeto2.html" class="btn-leia-mais mt-auto">Ler matéria completa &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="col-12 col-md-4">
+                <div class="card news-card">
+                    <div class="card-date-badge">
+                        <span>2026</span>
+                        OUT<br>07
+                    </div>
+                    <img src="img/projeto3-01.jpg" class="card-img-top" alt="Apresentação do projeto Mulheres na TI">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-light text-dark mb-2 align-self-start border">Diversidade na TI</span>
+                        <h3 class="card-title h5">Mulheres na TI: Uma Análise Sob a Ótica de Gênero</h3>
+                        <p class="card-text text-muted small">Investigação documental usando modelos de IA evidencia como microviolências e assédio mantêm o bloco STEM segregado.</p>
+                        <a href="projeto3.html" class="btn-leia-mais mt-auto">Ler matéria completa &rarr;</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Rodapé Semântico com Assinatura da Empresa -->
+    <footer class="py-4 mt-5">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center gap-2 mb-2">
+                <img src="img/favicon-fn.png" alt="F&N News" height="20">
+                <p class="mb-0 fw-bold">F&N NEWS &copy; 2026 Portal de Projetos - UniCatólica</p>
+            </div>
+            <p class="mb-0 small text-white-50">
+                Desenvolvido por Flávio Sousa de França Chaves e Mateus Diel Inomata.<br>
+                Disciplina: Soluções para Internet - Engenharia de Software.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
